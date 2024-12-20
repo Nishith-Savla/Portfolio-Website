@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const socials = [
 	{
@@ -11,8 +12,8 @@ const socials = [
 		icon: <FaGithub />,
 	},
 	{
-		path: "https://twitter.com/Nishith_Savla",
-		icon: <FaTwitter />,
+		path: "https://x.com/Nishith_Savla",
+		icon: <FaXTwitter />,
 	},
 ];
 
