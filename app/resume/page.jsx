@@ -4,26 +4,24 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { motion } from "framer-motion";
-
 import {
-	FaCss3,
 	FaDocker,
 	FaGit,
 	FaGithub,
-	FaHtml5,
+	FaJava,
 	FaJs,
 	FaLinux,
 	FaNodeJs,
 	FaPython,
-	FaReact,
+	FaReact
 } from "react-icons/fa";
-import { SiGo } from "react-icons/si";
+import { SiCplusplus, SiFlutter, SiGo, SiGooglecloud } from "react-icons/si";
 
 // about data
 const about = {
 	title: "About Me",
 	description:
-		"I'm a software developer with a passion for creating innovative solutions to complex problems. I have a strong background in web development and a knack for learning new technologies.",
+		"Hi, I'm an engineer, software developer, and problem solver. I help companies and individuals turn their ideas into reality through software development and automation. I specialize in building powerful backend infrastructures, automating processes, and implementing cloud computing solutions.",
 	info: [
 		{
 			fieldName: "Name",
@@ -38,8 +36,8 @@ const about = {
 			fieldValue: "2+ years",
 		},
 		{
-			fieldName: "Nationality",
-			fieldValue: "Indian",
+			fieldName: "Location",
+			fieldValue: "Mumbai, Maharashtra",
 		},
 		{
 			fieldName: "Freelance",
@@ -60,120 +58,110 @@ const about = {
 const experience = {
 	icon: "/asses/resume/badge.svg",
 	title: "My Experience",
-	description:
-		"I have 2+ years of experience in web development and 1+ years of experience in app development.",
+	description: "I specialize in backend development, cloud computing, and process automation.",
 	items: [
 		{
-			company: "VVisionAlpha",
-			position: "Freelance Developer",
-			duration: "Aug 2023 - Present",
+			company: "Grafana and Friends Mumbai",
+			position: "Community Volunteer",
+			duration: "May 2024 - Present"
 		},
 		{
-			company: "Citi India",
+			company: "Citicorp Services India Pvt. Ltd.",
 			position: "Summer Analyst Intern",
-			duration: "Jun 2024 - Jul 2024",
+			duration: "Jun 2024 - Jul 2024"
 		},
 		{
-			company: "ABC",
-			position: "Software Developer",
-			duration: "Jan 2024 - Jul 2024",
+			company: "Google Developer Student Clubs VJTI",
+			position: "Cloud Computing Lead",
+			duration: "Aug 2023 - Jun 2024"
 		},
 		{
-			company: "XYZ",
-			position: "Software Developer",
-			duration: "Jan 2024 - Jul 2024",
+			company: "VJTI Training and Placement Office",
+			position: "Student Placement Coordinator",
+			duration: "Mar 2023 - Present"
 		},
 		{
-			company: "ABC",
+			company: "Achalgachham",
 			position: "Software Developer",
-			duration: "Jan 2024 - Jul 2024",
-		},
-		{
-			company: "ABC",
-			position: "Software Developer",
-			duration: "Jan 2024 - Jul 2024",
-		},
+			duration: "Aug 2022 - Aug 2023"
+		}
 	],
 };
 
 const education = {
 	icon: "/asses/resume/cap.svg",
 	title: "My Education",
-	description:
-		"I have a strong foundation in computer science and a passion for learning new technologies.",
+	description: "I have a strong foundation in computer science with excellent academic performance.",
 	items: [
 		{
 			institution: "VJTI, Mumbai",
 			degree: "B.Tech in Computer Engineering",
-			duration: "2022 - 2025",
+			duration: "Nov 2022 - Jun 2025",
 		},
 		{
 			institution: "K. J. Somaiya Polytechnic",
 			degree: "Diploma in Computer Engineering",
-			duration: "2019 - 2022",
-		},
-		{
-			institution: "Online Course",
-			degree: "Web Development",
-			duration: "2020 - 2021",
-		},
-		{
-			institution: "Online Course",
-			degree: "Python Programming",
-			duration: "2020 - 2021",
-		},
+			duration: "Aug 2019 - Jun 2022",
+		}
 	],
 };
 
 const skills = {
 	title: "My Skills",
-	description:
-		"I have a strong foundation in computer science and a passion for learning new technologies.",
+	description: "I have expertise in multiple programming languages and modern development tools.",
 	skillList: [
 		{
-			icon: <FaHtml5 />,
-			name: "HTML5",
+				icon: <FaPython />,
+				name: "Python",
 		},
 		{
-			icon: <FaCss3 />,
-			name: "CSS3",
+				icon: <FaJs />,
+				name: "JavaScript",
 		},
 		{
-			icon: <FaJs />,
-			name: "JavaScript",
+				icon: <SiGo />,
+				name: "Golang",
 		},
 		{
-			icon: <FaReact />,
-			name: "React",
+				icon: <FaJava />,
+				name: "Java",
 		},
 		{
-			icon: <FaNodeJs />,
-			name: "Node.js",
+				icon: <SiCplusplus />,
+				name: "C++",
 		},
 		{
-			icon: <SiGo />,
-			name: "Golang",
+				icon: <FaReact />,
+				name: "React",
 		},
 		{
-			icon: <FaPython />,
-			name: "Python",
+				icon: <FaNodeJs />,
+				name: "Node.js",
 		},
 		{
-			icon: <FaLinux />,
-			name: "Linux",
+				icon: <SiFlutter />,
+				name: "Flutter",
 		},
 		{
-			icon: <FaDocker />,
-			name: "Docker",
+				icon: <FaGit />,
+				name: "Git",
 		},
 		{
-			icon: <FaGit />,
-			name: "Git",
+				icon: <FaGithub />,
+				name: "GitHub",
 		},
 		{
-			icon: <FaGithub />,
-			name: "GitHub",
+				icon: <FaLinux />,
+				name: "Linux",
 		},
+		{
+				icon: <FaDocker />,
+				name: "Docker",
+		},
+		{
+				icon: <SiGooglecloud />,
+				name: "Google Cloud",
+		}
 	],
 };
 
